@@ -1,0 +1,12 @@
+{
+  "name": "animazioni",
+  "private": true,
+  "description": "Test automatici delle animazioni",
+  "scripts": {
+    "test": "playwright test",
+    "serve": "python3 -m http.server 4173"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
