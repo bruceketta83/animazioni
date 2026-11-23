@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Animazioni di matematica</title>
+<meta name="description" content="Brevi film animati di matematica per la scuola media.">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root { --bg: #ece6d8; --card: #f6f1e6; --fg: #1d1a16; --muted: #6b6357; --line: #d6ccb8; --acc: #b02e22; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #161412; --card: #201d1a; --fg: #eee6d6; --muted: #a39a8a; --line: #34302a; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #161412; --card: #201d1a; --fg: #eee6d6; --muted: #a39a8a; --line: #34302a; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg); font: 19px/1.45 "Cormorant Garamond", Georgia, serif;
+    padding: max(20px, env(safe-area-inset-top)) 16px max(32px, env(safe-area-inset-bottom));
+  }
+  main { max-width: 960px; margin: 0 auto; }
+  a.back { color: var(--muted); text-decoration: none; font-size: 17px; }
+  a.back:hover { text-decoration: underline; }
+  header { margin: 14px 0 26px; }
+  h1 { font: 600 clamp(28px, 6vw, 42px)/1.1 "Cormorant SC", "Cormorant Garamond", Georgia, serif; letter-spacing: .05em; margin: 0 0 6px; }
+  h1::before { content: ""; display: inline-block; width: .5em; height: .5em; background: var(--acc); margin-right: .35em; vertical-align: .08em; }
+  header p { margin: 0; color: var(--muted); font-style: italic; }
+  .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; color: inherit; text-decoration: none; transition: transform .15s, box-shadow .15s; }
+  a.card:hover, a.card:focus-visible { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(0, 0, 0, .15); outline: none; }
+  .card img { display: block; width: 100%; height: auto; aspect-ratio: 720 / 446; object-fit: cover; background: #f2ecde; }
+  .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; }
+  .card h2 { font: 600 24px/1.2 "Cormorant Garamond", Georgia, serif; margin: 0; }
+  .card p { margin: 0; color: var(--muted); font-size: 17px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .meta span { font-size: 15px; padding: 1px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  footer { margin-top: 32px; color: var(--muted); font-size: 15px; text-align: center; }
+  footer a { color: var(--muted); }
+  @media (prefers-reduced-motion: reduce) { .card { transition: none; } a.card:hover { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="../">← Tutti i giochi e le animazioni</a>
+  <header>
+    <h1>Animazioni</h1>
+    <p>Brevi film di matematica per la scuola media.</p>
+  </header>
+
+  <section class="grid" aria-label="Animazioni">
+    <!-- Per aggiungere un'animazione: copia questa scheda e cambia cartella, immagine e testi. -->
+    <a class="card" href="parallelogramma/">
+      <img src="img/parallelogramma.webp" alt="Un parallelogramma disegnato a inchiostro, con gli angoli di 53° e 127° colorati" width="720" height="446">
+      <div class="body">
+        <h2>Il parallelogramma</h2>
+        <p>Lati, angoli, diagonali, perimetro e area. Poi rettangolo, rombo e quadrato.</p>
+        <div class="meta"><span>Geometria</span><span>1:24</span><span>Inchiostro</span></div>
+      </div>
+    </a>
+  </section>
+
+  <footer>Stile “Chinese Ink Wash” della libreria <a href="https://github.com/lemomo-ai/lemo-opuscar">Lemo-Opuscar</a> di Lemomo (LemoLab), motore sotto licenza MIT.</footer>
+</main>
+</body>
+</html>
