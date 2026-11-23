@@ -258,6 +258,7 @@
                 <!-- Tabella Riepilogo Conteggio Ottetto Prima e Dopo -->
                 <div class="mt-1">
                     <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Bilancio degli elettroni (Prima → Dopo)</h3>
+                    <p class="text-[11px] text-slate-400 mb-2">Dopo: elettroni <strong>solitari</strong> (solo dell'atomo) + elettroni <strong>nei legami</strong> (contati per entrambi gli atomi).</p>
                     <div id="octet-summary-cards" class="space-y-2">
                         <!-- Card generate dinamicamente per ciascun atomo -->
                     </div>
@@ -384,8 +385,8 @@
                     { a: 'O', b: 'H2', pairs: 1 }
                 ],
                 summary: [
-                    { symbol: 'O', name: 'Ossigeno', before: '6 valenza', after: '8 (4 suoi + 4 condivisi)', target: 8, status: 'Ottetto!' },
-                    { symbol: 'H', name: 'Idrogeno (×2)', before: '1 valenza', after: '2 (1 suo + 1 condiviso)', target: 2, status: 'Duetto!' }
+                    { symbol: 'O', name: 'Ossigeno', before: '6 valenza', after: '8 (4 solitari + 4 nei legami)', target: 8, status: 'Ottetto!' },
+                    { symbol: 'H', name: 'Idrogeno (×2)', before: '1 valenza', after: '2 (tutti nel legame)', target: 2, status: 'Duetto!' }
                 ]
             },
             {
@@ -412,8 +413,8 @@
                     { a: 'C', b: 'O2', pairs: 2 }
                 ],
                 summary: [
-                    { symbol: 'C', name: 'Carbonio', before: '4 valenza', after: '8 (4 suoi + 4 condivisi)', target: 8, status: 'Ottetto!' },
-                    { symbol: 'O', name: 'Ossigeno (×2)', before: '6 valenza', after: '8 (4 suoi + 4 condivisi)', target: 8, status: 'Ottetto!' }
+                    { symbol: 'C', name: 'Carbonio', before: '4 valenza', after: '8 (0 solitari + 8 nei legami)', target: 8, status: 'Ottetto!' },
+                    { symbol: 'O', name: 'Ossigeno (×2)', before: '6 valenza', after: '8 (4 solitari + 4 nel legame)', target: 8, status: 'Ottetto!' }
                 ]
             },
             {
@@ -470,8 +471,8 @@
                     { a: 'C', b: 'H4', pairs: 1 }
                 ],
                 summary: [
-                    { symbol: 'C', name: 'Carbonio', before: '4 valenza', after: '8 (4 suoi + 4 condivisi)', target: 8, status: 'Ottetto!' },
-                    { symbol: 'H', name: 'Idrogeno (×4)', before: '1 valenza', after: '2 (1 suo + 1 condiviso)', target: 2, status: 'Duetto!' }
+                    { symbol: 'C', name: 'Carbonio', before: '4 valenza', after: '8 (0 solitari + 8 nei legami)', target: 8, status: 'Ottetto!' },
+                    { symbol: 'H', name: 'Idrogeno (×4)', before: '1 valenza', after: '2 (tutti nel legame)', target: 2, status: 'Duetto!' }
                 ]
             },
             {
@@ -500,8 +501,8 @@
                     { a: 'N', b: 'H3', pairs: 1 }
                 ],
                 summary: [
-                    { symbol: 'N', name: 'Azoto', before: '5 valenza', after: '8 (5 suoi + 3 condivisi)', target: 8, status: 'Ottetto!' },
-                    { symbol: 'H', name: 'Idrogeno (×3)', before: '1 valenza', after: '2 (1 suo + 1 condiviso)', target: 2, status: 'Duetto!' }
+                    { symbol: 'N', name: 'Azoto', before: '5 valenza', after: '8 (2 solitari + 6 nei legami)', target: 8, status: 'Ottetto!' },
+                    { symbol: 'H', name: 'Idrogeno (×3)', before: '1 valenza', after: '2 (tutti nel legame)', target: 2, status: 'Duetto!' }
                 ]
             },
             {
@@ -526,8 +527,8 @@
                     { a: 'O1', b: 'O2', pairs: 2 }
                 ],
                 summary: [
-                    { symbol: 'O', name: 'Ossigeno 1', before: '6 valenza', after: '8 (4 suoi + 4 condivisi)', target: 8, status: 'Ottetto!' },
-                    { symbol: 'O', name: 'Ossigeno 2', before: '6 valenza', after: '8 (4 suoi + 4 condivisi)', target: 8, status: 'Ottetto!' }
+                    { symbol: 'O', name: 'Ossigeno 1', before: '6 valenza', after: '8 (4 solitari + 4 nel legame)', target: 8, status: 'Ottetto!' },
+                    { symbol: 'O', name: 'Ossigeno 2', before: '6 valenza', after: '8 (4 solitari + 4 nel legame)', target: 8, status: 'Ottetto!' }
                 ]
             },
             {
@@ -552,8 +553,8 @@
                     { a: 'H', b: 'Cl', pairs: 1 }
                 ],
                 summary: [
-                    { symbol: 'H', name: 'Idrogeno', before: '1 valenza', after: '2 (1 suo + 1 condiviso)', target: 2, status: 'Duetto!' },
-                    { symbol: 'Cl', name: 'Cloro', before: '7 valenza', after: '8 (6 suoi + 2 condivisi)', target: 8, status: 'Ottetto!' }
+                    { symbol: 'H', name: 'Idrogeno', before: '1 valenza', after: '2 (tutti nel legame)', target: 2, status: 'Duetto!' },
+                    { symbol: 'Cl', name: 'Cloro', before: '7 valenza', after: '8 (6 solitari + 2 nel legame)', target: 8, status: 'Ottetto!' }
                 ]
             },
             {
