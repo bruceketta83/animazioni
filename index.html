@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Animazioni di matematica</title>
-<meta name="description" content="Brevi film animati di matematica per la scuola media.">
+<title>Animazioni e video</title>
+<meta name="description" content="Animazioni, video e laboratori interattivi per la scuola media.">
 <link rel="stylesheet" href="fonts/fonts.css">
 <style>
   :root { --bg: #ece6d8; --card: #f6f1e6; --fg: #1d1a16; --muted: #6b6357; --line: #d6ccb8; --acc: #b02e22; }
@@ -43,22 +43,50 @@
   <a class="back" href="../">← Tutti i giochi e le animazioni</a>
   <header>
     <h1>Animazioni</h1>
-    <p>Brevi film di matematica per la scuola media.</p>
+    <p>Film, video e laboratori interattivi per la scuola media.</p>
   </header>
 
   <section class="grid" aria-label="Animazioni">
     <!-- Per aggiungere un'animazione: copia questa scheda e cambia cartella, immagine e testi. -->
-    <a class="card" href="parallelogramma/">
+    <!-- data-tipo: "film" (lettore a inchiostro), "video" (file MP4) o "interattivo". Il test controlla ogni tipo. -->
+    <a class="card" href="parallelogramma/" data-tipo="film">
       <img src="img/parallelogramma.webp" alt="Un parallelogramma disegnato a inchiostro, con gli angoli di 53° e 127° colorati" width="720" height="446">
       <div class="body">
         <h2>Il parallelogramma</h2>
         <p>Lati, angoli, diagonali, perimetro e area. Poi rettangolo, rombo e quadrato.</p>
-        <div class="meta"><span>Geometria</span><span>1:24</span><span>Inchiostro</span></div>
+        <div class="meta"><span>Geometria</span><span>1:24</span><span>Film</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="triangoli/" data-tipo="video">
+      <img src="img/triangoli.webp" alt="Due triangoli con due lati e l'angolo compreso uguali: il criterio LAL" width="720" height="446">
+      <div class="body">
+        <h2>I triangoli</h2>
+        <p>Classificazione per lati e per angoli, costruibilità e criteri di congruenza.</p>
+        <div class="meta"><span>Geometria</span><span>1:30</span><span>Video</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="ottetto/" data-tipo="interattivo">
+      <img src="img/ottetto.webp" alt="La molecola d'acqua: l'ossigeno con 8 elettroni e i due idrogeni con 2" width="720" height="446">
+      <div class="body">
+        <h2>La regola dell'ottetto</h2>
+        <p>Costruisci 8 molecole e guarda come gli atomi condividono o cedono elettroni.</p>
+        <div class="meta"><span>Scienze</span><span>3ª media</span><span>Interattivo</span></div>
+      </div>
+    </a>
+
+    <a class="card" href="europa/" data-tipo="video">
+      <img src="img/europa.webp" alt="Il titolo Europe accanto al globo con l'Europa" width="720" height="446">
+      <div class="body">
+        <h2>L'Europa, penisola di penisole</h2>
+        <p>Confini, penisole e grandi regioni d'Europa. Video in inglese.</p>
+        <div class="meta"><span>Geografia</span><span>In inglese</span><span>2:00</span><span>Video</span></div>
       </div>
     </a>
   </section>
 
-  <footer>Stile “Chinese Ink Wash” della libreria <a href="https://github.com/lemomo-ai/lemo-opuscar">Lemo-Opuscar</a> di Lemomo (LemoLab), motore sotto licenza MIT.</footer>
+  <footer>Il parallelogramma usa lo stile “Chinese Ink Wash” della libreria <a href="https://github.com/lemomo-ai/lemo-opuscar">Lemo-Opuscar</a> di Lemomo (LemoLab), motore sotto licenza MIT.</footer>
 </main>
 </body>
 </html>
