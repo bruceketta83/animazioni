@@ -1,0 +1,19 @@
+/* Pagine dei video: stessi colori della pagina delle animazioni. */
+:root { --bg: #ece6d8; --fg: #1d1a16; --muted: #6b6357; --line: #d6ccb8; --acc: #b02e22; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #161412; --fg: #eee6d6; --muted: #a39a8a; --line: #34302a; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #161412; --fg: #eee6d6; --muted: #a39a8a; --line: #34302a; color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg); font: 19px/1.45 "Cormorant Garamond", Georgia, serif;
+  padding: max(16px, env(safe-area-inset-top)) 16px max(28px, env(safe-area-inset-bottom));
+}
+main { max-width: 1280px; margin: 0 auto; }
+a.back { display: inline-block; margin: 2px 0 4px; color: var(--muted); font-size: 17px; text-decoration: none; }
+a.back:hover { text-decoration: underline; }
+h1 { font: 600 clamp(22px, 4vw, 34px)/1.15 "Cormorant SC", "Cormorant Garamond", Georgia, serif; letter-spacing: .05em; margin: 4px 0 12px; }
+video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; border-radius: 6px; box-shadow: 0 4px 24px rgba(0, 0, 0, .18); }
+p.desc { margin: 12px 2px 8px; font-size: 18px; color: var(--fg); }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; }
+.meta span { font-size: 15px; padding: 1px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
