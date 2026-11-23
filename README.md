@@ -7,7 +7,7 @@ Film, video e laboratori interattivi per la scuola media: https://bruceketta83.g
 | Il parallelogramma | [`parallelogramma/`](parallelogramma/) | film | 1:24 |
 | I triangoli | [`triangoli/`](triangoli/) | video | 1:30 |
 | La regola dell'ottetto | [`ottetto/`](ottetto/) | interattivo | – |
-| L'Europa, penisola di penisole (in inglese, senza audio) | [`europa/`](europa/) | video | 2:00 |
+| L'Europa, penisola di penisole (in inglese) | [`europa/`](europa/) | video | 2:00 |
 
 ## Come aggiungere un contenuto
 
