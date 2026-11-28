@@ -8,6 +8,7 @@ Film, video e laboratori interattivi per la scuola media: https://bruceketta83.g
 | I triangoli | [`triangoli/`](triangoli/) | video | 1:30 |
 | La regola dell'ottetto | [`ottetto/`](ottetto/) | interattivo | – |
 | L'Europa, penisola di penisole (in inglese) | [`europa/`](europa/) | video | 2:00 |
+| Viaggio dentro la materia: l'atomo | [`atomo/`](atomo/) | video | 1:46 |
 
 ## Come aggiungere un contenuto
 
