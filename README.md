@@ -9,6 +9,7 @@ Film, video e laboratori interattivi per la scuola media: https://bruceketta83.g
 | La regola dell'ottetto | [`ottetto/`](ottetto/) | interattivo | – |
 | L'Europa, penisola di penisole (in inglese) | [`europa/`](europa/) | video | 2:00 |
 | Viaggio dentro la materia: l'atomo | [`atomo/`](atomo/) | video | 1:46 |
+| Atomi e legami chimici | [`legami/`](legami/) | video | 3:00 |
 
 ## Come aggiungere un contenuto
 
